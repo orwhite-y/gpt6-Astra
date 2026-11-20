@@ -1,7 +1,7 @@
 ## 小类三拍总表 · CHA-LEAVES
 
 参考 GitHub 上「一类一面 SKILL.md」的拆法（Claude-Red / rev-skills / pentest-skills / DFIR skills），正文原创。
-工单先匹配小类，再执行该小类三拍；匹配不上再退回六条父技能。
+工单先匹配小类，再执行该小类三拍；匹配不上再退回七条父技能。
 
 | 小类 | 技能 id | 父技能 | 关键词 |
 | --- | --- | --- | --- |
@@ -22,6 +22,17 @@
 | APK 分析 | `cra-apk` | `cha-bin-unlock` | APK Android smali jadx 加固 |
 | 固件分析 | `cra-fw` | `cha-bin-unlock` | 固件 firmware binrootfs squashfs |
 | 其它二进制 | `cra-bin-else` | `cha-bin-unlock` | 二进制 binary 样本 未知格式 |
+| Windows 内核 | `ker-win` | `cha-kernedge` | Windows 内核 ntoskrnl ring0 环0 内核对象 KPCR EPROCESS |
+| Linux 内核 | `ker-lin` | `cha-kernedge` | Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring |
+| 驱动攻击面 | `ker-drv` | `cha-kernedge` | 驱动 .sys DriverEntry IRP IOCTL DeviceIoControl 派遣 攻击面 |
+| 提权链 | `ker-lpe` | `cha-kernedge` | 提权 LPE Token SYSTEM 权限提升 原语 |
+| 内核调试 | `ker-dbg` | `cha-kernedge` | 内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb |
+| 内核转储 | `ker-dump` | `cha-kernedge` | 内核转储 dump 蓝屏 BSOD bugcheck kdump vmcore 崩溃 |
+| 内核模糊 | `ker-fuzz` | `cha-kernedge` | 内核模糊 syzkaller kAFL ioctl fuzzer 语料 崩溃去重 |
+| rootkit 分析 | `ker-rootkit` | `cha-kernedge` | rootkit DKOM 回调挂钩 Minifilter 隐藏 持久化 对抗 |
+| 内核缓解 | `ker-guard` | `cha-kernedge` | 缓解 加固 PatchGuard HVCI VBS SMEP SMAP CFI 驱动签名 WDAC |
+| VT-x 虚拟化 | `ker-vt` | `cha-kernedge` | VT-x hypervisor VMX VMCS EPT VM-exit 虚拟化 VMM |
+| 反虚拟机检测 | `ker-stealth` | `cha-kernedge` | 反检测 沙箱隐身 al-khaser Pafish VM检测 虚拟机识别 对抗 |
 | 游戏外挂 | `ply-cheat` | `cha-playfield` | 外挂 cheat 辅助 挂 |
 | Trainer | `ply-trainer` | `cha-playfield` | Trainer 修改器 无限弹药 金钱 |
 | ESP | `ply-esp` | `cha-playfield` | ESP 方框 骨骼 物品描边 |
@@ -50,6 +61,7 @@
 | 凭证测试 | `net-cred` | `cha-netcast` | 凭证 默认密码 弱口令 泄露 |
 | CVE 验证 | `net-cve` | `cha-netcast` | CVE POC 复现 版本 |
 | 渗透报告 | `net-report` | `cha-netcast` | 渗透报告 证据 利用链 |
+| 抓包采集 | `net-capture` | `cha-netcast` | 抓包 tcpdump tshark Wireshark mitmproxy 流量采集 中间人 |
 | API 安全 | `cld-api` | `cha-apicloud` | REST API 接口 未授权 BOLA |
 | GraphQL | `cld-gql` | `cha-apicloud` | GraphQL introspection 过度取数 |
 | WebSocket | `cld-ws` | `cha-apicloud` | WebSocket 握手 订阅 推送 |
@@ -74,6 +86,7 @@
 | 数据采集 | `lab-harvest` | `cha-labpipe` | 采集 爬虫 签名 断点续爬 |
 | 自动化工具 | `lab-auto` | `cha-labpipe` | 自动化 流水线 编排 |
 | 报告生成 | `lab-report` | `cha-labpipe` | 报告生成 取证报告 汇总 |
+| 沙箱流水线 | `lab-sandbox` | `cha-labpipe` | 沙箱 VirtualBox Cuckoo CAPE 引爆 快照 行为采集 |
 | 技术文章 | `ink-tech` | `cha-inkstage` | 技术文章 教程 原理 |
 | 项目文档 | `ink-docs` | `cha-inkstage` | 项目文档 README 接口文档 |
 | 分析报告 | `ink-analysis` | `cha-inkstage` | 分析报告 研判 结论 |

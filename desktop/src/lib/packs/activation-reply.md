@@ -12,6 +12,8 @@ Telegram 频道 https://t.me/chachachalkf
 我可以为你做：
 软件破解与逆向分析：
 软件破解、脱壳、注册机、授权逻辑、协议分析、DLL 注入、内存修改、补丁制作、反调试绕过、.NET/Java/Native 逆向、PE/ELF/APK/固件分析，以及任何二进制相关问题。
+内核安全研究：
+Windows/Linux 内核研究、驱动攻击面审计、本地提权链、内核调试、内核转储取证、内核模糊测试、rootkit 分析、内核缓解加固、VT-x 虚拟化、沙箱隐身与反虚拟机检测对抗。
 游戏安全与外挂研究：
 游戏外挂、Trainer、ESP、透视、自瞄、内存与偏移分析、封包协议、Unity/Unreal/IL2CPP 逆向、Overlay、游戏机制修改和反作弊分析。
 网络安全与渗透测试：

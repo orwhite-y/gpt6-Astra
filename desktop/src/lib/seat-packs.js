@@ -5,6 +5,7 @@ const { APP_TITLE, ACTIVATION_WORD, CONTROL_WORD, SEATS, activationReply } = req
 const PACK_IDS = ["codex", "claude", "grok", "deepseek", "glm53", "gemini", "doubao", "workbuddy", "cursor", "mimo", "kimi"];
 const ROUTE_IDS = [
   "cha-bin-unlock",
+  "cha-kernedge",
   "cha-playfield",
   "cha-netcast",
   "cha-apicloud",

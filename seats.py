@@ -16,6 +16,7 @@ CONTROL_WORD = "BREAK//OPEN"
 PACK_IDS = ("codex", "claude", "grok", "deepseek", "glm53", "gemini", "doubao", "workbuddy", "cursor")
 ROUTE_IDS = (
     "cha-bin-unlock",
+    "cha-kernedge",
     "cha-playfield",
     "cha-netcast",
     "cha-apicloud",

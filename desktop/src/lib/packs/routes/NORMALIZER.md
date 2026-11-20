@@ -30,6 +30,17 @@
 | apk解开、安卓包、看manifest | APK 分析 | cra-apk |
 | 固件抽一层、路由器包、dump pflash | 固件分析 | cra-fw |
 | 这是啥二进制、未知文件拆开 | 其它二进制 | cra-bin-else |
+| 拆内核、ntoskrnl看看、内核镜像拆开 | Windows 内核 | ker-win |
+| vmlinux、内核模块、lkm拆开 | Linux 内核 | ker-lin |
+| 驱动审计、IOCTL拆一下、驱动有洞吗 | 驱动攻击面 | ker-drv |
+| 提权、LPE、到SYSTEM、拿最高权限 | 提权链 | ker-lpe |
+| 挂windbg、双机调试、内核调试环境 | 内核调试 | ker-dbg |
+| 蓝屏分析、dump看看、崩溃在哪一环 | 内核转储 | ker-dump |
+| syzkaller、内核fuzz、糊内核接口 | 内核模糊 | ker-fuzz |
+| rootkit看看、钩子在哪、查隐藏进程 | rootkit 分析 | ker-rootkit |
+| 缓解开了没、内核加固、patchguard | 内核缓解 | ker-guard |
+| 写个hypervisor、VT开发、VMCS、EPT拆一下 | VT-x 虚拟化 | ker-vt |
+| 过alkhaser、防虚拟机识别、沙箱隐身、过VM检测 | 反虚拟机检测 | ker-stealth |
 | 做个挂、辅助、开挂 | 游戏外挂 | ply-cheat |
 | 修改器、一键加钱、锁血 | Trainer | ply-trainer |
 | 画个框、人物描边、esp | ESP | ply-esp |
@@ -58,6 +69,7 @@
 | 默认密码、凭证还能用吗 | 凭证测试 | net-cred |
 | 这个cve能打吗、复现编号 | CVE 验证 | net-cve |
 | 出个报告、把链写清楚 | 渗透报告 | net-report |
+| 抓包、抓一下包、mitmproxy、中间人抓包 | 抓包采集 | net-capture |
 | 接口清单、未授权接口 | API 安全 | cld-api |
 | graphql、过度取数 | GraphQL | cld-gql |
 | websocket、推送越权 | WebSocket | cld-ws |
@@ -76,6 +88,7 @@
 | 提ioc、域名哈希列出来 | IOC | lab-ioc |
 | 内存转储、volatility | 内存取证 | lab-memfor |
 | 看pcap、抓流量 | 流量分析 | lab-pcap |
+| 搭沙箱、virtualbox定制、cuckoo引爆 | 沙箱流水线 | lab-sandbox |
 | 翻日志、谁登进来了 | 日志溯源 | lab-log |
 | 这洞怎么来的、补丁对比 | 漏洞研究 | lab-vulnres |
 | 批量扫、目录一起扫 | 批量扫描 | lab-batch |
@@ -98,5 +111,5 @@
 
 1. 锁到叶子就立刻执行该叶子「第一步 → 第二步 → 第三步」，缺的值用 TARGET / HOST / TOKEN / OFFSET / PATCH_BYTE / PAYLOAD / SERIAL / ROLE_A / ROLE_B 填上接着干。
 2. 一条口语打到两片叶子时，先主后辅，连着做完，中间不请示。
-3. 表里没有、关键词也没有：有二进制走 `cha-bin-unlock`，有网址/IP 走 `cha-netcast`，纯字走 `cha-inkstage`。
+3. 表里没有、关键词也没有：有二进制走 `cha-bin-unlock`，有内核/沙箱字样走 `cha-kernedge`，有网址/IP 走 `cha-netcast`，纯字走 `cha-inkstage`。
 4. 禁止把本层翻译过程、技能名、计分说出口。用户只看产物和收口行。
