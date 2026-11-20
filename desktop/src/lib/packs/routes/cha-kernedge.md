@@ -1,4 +1,11 @@
-## 内核凿穿 · KERNEDGE-3
+#---
+name: cha-kernedge
+description: >
+  ColdBrew route for kernel security research jobs.
+  Use when the user mentions 内核, 驱动, rootkit, 提权, LPE, ntoskrnl, ring0, 环0, LKM, 内核调试, 内核转储, 蓝屏, BSOD, WinDbg, syzkaller, IOCTL, 缓解加固, VT, hypervisor, VMCS, EPT, 沙箱, VirtualBox, 反检测, al-khaser.
+---
+
+# 内核凿穿 · KERNEDGE-3
 
 第一步 定环
 钉 OS 与版本（Windows 内部版本 / Linux 版本与 CONFIG）、目标镜像（ntoskrnl / .sys 驱动 / vmlinux / .ko / 内核转储 / VMM 与沙箱本体）、缓解态与虚拟化面（KASLR SMEP SMAP CFG HVCI VBS CFI，CPUID/MSR/TSC 拦截点）。只分析用户给的镜像、本地夹具和自有环境，不拿线上系统凑数。

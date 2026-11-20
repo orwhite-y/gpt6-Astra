@@ -24,6 +24,9 @@
 | 其它二进制 | `cra-bin-else` | `cha-bin-unlock` | 二进制 binary 样本 未知格式 |
 | 动态插桩 | `cra-hook` | `cha-bin-unlock` | Frida hook 插桩 Xposed 主动调用 trace 动态分析 |
 | 算法识别还原 | `cra-crypto` | `cha-bin-unlock` | 加密算法识别 FindCrypt 魔改算法 密钥派生 对拍 |
+| iOS 逆向 | `cra-ios` | `cha-bin-unlock` | iOS IPA dyld class-dump ObjC Swift 拆包 |
+| 打包脚本还原 | `cra-pyjs` | `cha-bin-unlock` | PyInstaller pyc webpack javascript-obfuscator 混淆还原 脚本打包 |
+| VM 保护还原 | `cra-vmprot` | `cha-bin-unlock` | VMProtect Themida 虚拟机保护 vInstruction handler 还原 |
 | Windows 内核 | `ker-win` | `cha-kernedge` | Windows 内核 ntoskrnl ring0 环0 内核对象 KPCR EPROCESS |
 | Linux 内核 | `ker-lin` | `cha-kernedge` | Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring GKI SELinux |
 | 驱动攻击面 | `ker-drv` | `cha-kernedge` | 驱动 .sys DriverEntry IRP IOCTL DeviceIoControl 派遣 攻击面 |
@@ -51,12 +54,14 @@
 | 游戏机制修改 | `ply-mech` | `cha-playfield` | 机制 冷却 伤害 移速 重力 |
 | 反作弊分析 | `ply-ac` | `cha-playfield` | 反作弊 EasyAntiCheat BattlEye 检测点 |
 | 驱动保护分析 | `ply-prot` | `cha-playfield` | 游戏驱动保护 TP ACE TenProtect Vanguard EAC BattlEye 保护驱动 内核保护 检测机制 |
+| 单机 Mod 制作 | `ply-mod` | `cha-playfield` | Mod 模组 BepInEx MelonLoader Harmony 单机游戏 |
 | 资产发现 | `net-asset` | `cha-netcast` | 资产发现 测绘 暴露面 |
 | 端口扫描 | `net-port` | `cha-netcast` | 端口扫描 nmap 开放端口 服务 |
 | 子域名发现 | `net-sub` | `cha-netcast` | 子域名 爆破 crt.sh 证书 |
 | DNS 查询 | `net-dns` | `cha-netcast` | DNS 解析 NS MX TXT SPF |
 | 目录枚举 | `net-dir` | `cha-netcast` | 目录枚举 ffuf dirb 备份文件 |
 | 技术栈指纹 | `net-fp` | `cha-netcast` | 指纹 框架 Wappalyzer 中间件 |
+| WAF 指纹测绘 | `net-waf` | `cha-netcast` | WAF CDN 指纹 安全网关 拦截页 规则测绘 |
 | 漏洞扫描 | `net-scan` | `cha-netcast` | 漏洞扫描 nuclei 漏扫 |
 | SQL 注入 | `net-sqli` | `cha-netcast` | SQL注入 SQLi union 盲注 sqlmap |
 | XSS | `net-xss` | `cha-netcast` | XSS 反射 存储 DOM |
@@ -81,6 +86,10 @@
 | 供应链安全 | `cld-supply` | `cha-apicloud` | 供应链 CI 投毒 构建脚本 |
 | 模糊测试 | `cld-fuzz` | `cha-apicloud` | 模糊测试 fuzz corpus AFL |
 | 业务逻辑 | `cld-biz` | `cha-apicloud` | 业务逻辑 支付 状态机 竞态 |
+| 智能合约审计 | `cld-chain` | `cha-apicloud` | Solidity 合约 EVM 重入 溢出 审计 |
+| LLM 应用安全 | `cld-llm` | `cha-apicloud` | LLM Agent 提示注入 RAG 工具越权 应用面测绘 |
+| 本地模型服务面 | `cld-llmserve` | `cha-apicloud` | 本地模型 Ollama vLLM llama.cpp LM Studio OpenAI兼容 端口暴露 GGUF safetensors 服务面 |
+| 护栏压测 | `cld-llmguard` | `cha-apicloud` | 模型压测 护栏评测 底线测试 拒答率 越狱抗性 garak PyRIT promptfoo HarmBench OWASP LLM 红队 第三方压测平台 授权闸门 授权核验 客户委托 版本回归 发布门禁 压制话术 无限制模式 Wilson 误拒率 |
 | 恶意样本分析 | `lab-sample` | `cha-labpipe` | 样本分析 malware 木马 行为 APK dex 样本 |
 | YARA | `lab-yara` | `cha-labpipe` | YARA 规则 匹配 |
 | IOC | `lab-ioc` | `cha-labpipe` | IOC 域名 IP 哈希 mutex |
@@ -93,6 +102,7 @@
 | 自动化工具 | `lab-auto` | `cha-labpipe` | 自动化 流水线 编排 |
 | 报告生成 | `lab-report` | `cha-labpipe` | 报告生成 取证报告 汇总 |
 | 沙箱流水线 | `lab-sandbox` | `cha-labpipe` | 沙箱 VirtualBox Cuckoo CAPE 引爆 快照 行为采集 |
+| 隐写与文件雕刻 | `lab-stego` | `cha-labpipe` | 隐写 stego binwalk carving 文件恢复 EXIF |
 | 技术文章 | `ink-tech` | `cha-inkstage` | 技术文章 教程 原理 |
 | 项目文档 | `ink-docs` | `cha-inkstage` | 项目文档 README 接口文档 |
 | 分析报告 | `ink-analysis` | `cha-inkstage` | 分析报告 研判 结论 |

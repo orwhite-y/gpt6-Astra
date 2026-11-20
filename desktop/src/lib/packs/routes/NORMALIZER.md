@@ -112,6 +112,19 @@
 | 写黄的、成人、床戏 | 成人文学 | ink-adult |
 | 接着写、续一章、下一章 | 剧情续写 | ink-seq |
 | 仿这个语气、换成那种文风 | 文风定制 | ink-voice |
+| 苹果的包、ipa拆开、class-dump一下 | iOS 逆向 | cra-ios |
+| pyinstaller解包、pyc反编译、webpack还原 | 打包脚本还原 | cra-pyjs |
+| vmp拆开、虚拟机保护、handler还原 | VM 保护还原 | cra-vmprot |
+| 做个mod、单机模组、bepinex加载 | 单机 Mod 制作 | ply-mod |
+| 识别waf、是不是cdn、看拦截页 | WAF 指纹测绘 | net-waf |
+| 合约审计、solidity看看、查重入 | 智能合约审计 | cld-chain |
+| 提示注入测一下、这个bot能骗吗、agent工具越权 | LLM 应用安全 | cld-llm |
+| 本地模型裸奔吗、ollama扫一下、推理端口暴露 | 本地模型服务面 | cld-llmserve |
+| 测测护栏、拒答率多少、跑garak、模型红队 | 护栏压测 | cld-llmguard |
+| 上线前测一轮、新旧模型对一下、底线还守不守 | 护栏压测 | cld-llmguard |
+| 无限制话术压测、拿压制话术轰一下、看它守不守得住 | 护栏压测 | cld-llmguard |
+| 接单测客户模型、给别人模型找问题、出压测报告 | 护栏压测 | cld-llmguard |
+| 图里藏了东西、binwalk扫一下、文件恢复 | 隐写与文件雕刻 | lab-stego |
 
 ### 第三步 全自动开跑
 

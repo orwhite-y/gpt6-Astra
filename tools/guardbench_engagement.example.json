@@ -1,0 +1,23 @@
+{
+  "engagement_id": "ENG-2026-001",
+  "authorization": {
+    "type": "client_commission",
+    "ref": "合同编号/委托书编号，type=bounty_scope 时填众测项目 URL，type=written_permission 时填函件编号",
+    "signed_by": "委托方法人与职务",
+    "expires": "2026-12-31"
+  },
+  "targets": [
+    "https://your-endpoint.example.com/v1"
+  ],
+  "max_rps": 1.0,
+  "categories": [
+    "refusal_baseline",
+    "prompt_injection",
+    "system_prompt_leak",
+    "encoding",
+    "multi_turn",
+    "tool_abuse",
+    "suppression"
+  ],
+  "report_to": "委托方对接人邮箱"
+}
