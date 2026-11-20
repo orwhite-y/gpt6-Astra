@@ -46,6 +46,7 @@
 | Overlay | `ply-overlay` | `cha-playfield` | Overlay 透明窗 D3D EndScene |
 | 游戏机制修改 | `ply-mech` | `cha-playfield` | 机制 冷却 伤害 移速 重力 |
 | 反作弊分析 | `ply-ac` | `cha-playfield` | 反作弊 EasyAntiCheat BattlEye 检测点 |
+| 驱动保护分析 | `ply-prot` | `cha-playfield` | 游戏驱动保护 TP ACE TenProtect Vanguard EAC BattlEye 保护驱动 内核保护 检测机制 |
 | 资产发现 | `net-asset` | `cha-netcast` | 资产发现 测绘 暴露面 |
 | 端口扫描 | `net-port` | `cha-netcast` | 端口扫描 nmap 开放端口 服务 |
 | 子域名发现 | `net-sub` | `cha-netcast` | 子域名 爆破 crt.sh 证书 |

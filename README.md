@@ -79,11 +79,12 @@
 <p><strong>隐私与版权：</strong>API Key 保存在 iOS Keychain，请求发送到顾客选择的服务商。公开源码和宣传截图经过凭据与个人资料检查；CI 构建和截图使用临时目录。iOS 客户端按 GPL-3.0-only 发布，冷咖啡原创 UI、品牌素材与独立收费服务按文档分开说明。</p>
 
 <h2 id="custom-分支新增能力">custom 分支 · 新增能力</h2>
-<p>本分支（<code>custom</code>）在上游 84 个叶子技能之上，新增第七条父技能 <strong>cha-kernedge（内核凿穿 · KERNEDGE-3）</strong> 与 13 个叶子：</p>
+<p>本分支（<code>custom</code>）在上游 84 个叶子技能之上，新增第七条父技能 <strong>cha-kernedge（内核凿穿 · KERNEDGE-3）</strong> 与 14 个叶子：</p>
 <ul>
 <li><strong>内核研究</strong>：Windows/Linux 内核结构（ker-win / ker-lin）、驱动攻击面审计（ker-drv）、提权链（ker-lpe）、内核调试（ker-dbg）、内核转储取证（ker-dump）、内核模糊（ker-fuzz）、rootkit 分析（ker-rootkit）、缓解加固（ker-guard）。</li>
 <li><strong>VT 虚拟化沙箱</strong>：VT-x hypervisor 开发与 VirtualBox VMM 改造（ker-vt）、沙箱隐身 / 反虚拟机检测对抗（ker-stealth）、VirtualBox + Cuckoo 引爆流水线（lab-sandbox）。</li>
 <li><strong>抓包采集</strong>：net-capture —— tcpdump/tshark 落盘、mitmproxy 中间人与 TLS 解密、pcap 会话索引。</li>
+<li><strong>游戏驱动保护分析</strong>：ply-prot —— 拆保护驱动（TP/ACE/EAC/BattlEye/Vanguard 等）的加载链与检测机制（回调、句柄剥离、完整性扫描、虚拟化识别），交检测点清单与研究报告。</li>
 <li><strong>注入与渗透</strong>：沿用原有 cra-dll（DLL 注入）、net-sqli（SQL 注入）与 cha-netcast 全套渗透叶子，本次在零分兜底与口语对照表中补齐内核 / 沙箱 / 抓包工单的命中路径，不再误路由。</li>
 </ul>
 <p>叶子目录由 <code>tools/emit_leaves.py</code> 再生成（93 leaves），桌面端（<code>seat-packs.js</code>）与终端安装器（<code>seats.py</code>）均已注册新父技能；以上能力仅供在你本人有权操作的环境里做学习与研究。</p>

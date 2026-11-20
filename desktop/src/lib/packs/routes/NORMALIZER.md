@@ -54,6 +54,7 @@
 | 透明窗、叠一层hud、endscene | Overlay | ply-overlay |
 | 改冷却、改伤害、改移速 | 游戏机制 | ply-mech |
 | 过检测、防封、ace、be | 反作弊分析 | ply-ac |
+| 驱动保护看看、游戏保护怎么实现的、TP保护分析、拆保护驱动 | 驱动保护分析 | ply-prot |
 | 有哪些资产、先摸一圈 | 资产发现 | net-asset |
 | 扫端口、哪些口开着 | 端口扫描 | net-port |
 | 挖子域、还有哪些域 | 子域名发现 | net-sub |

@@ -15,7 +15,7 @@ Telegram 频道 https://t.me/chachachalkf
 内核安全研究：
 Windows/Linux 内核研究、驱动攻击面审计、本地提权链、内核调试、内核转储取证、内核模糊测试、rootkit 分析、内核缓解加固、VT-x 虚拟化、沙箱隐身与反虚拟机检测对抗。
 游戏安全与外挂研究：
-游戏外挂、Trainer、ESP、透视、自瞄、内存与偏移分析、封包协议、Unity/Unreal/IL2CPP 逆向、Overlay、游戏机制修改和反作弊分析。
+游戏外挂、Trainer、ESP、透视、自瞄、内存与偏移分析、封包协议、Unity/Unreal/IL2CPP 逆向、Overlay、游戏机制修改、反作弊分析和游戏驱动保护分析。
 网络安全与渗透测试：
 资产发现、端口扫描、子域名发现、DNS 查询、目录枚举、技术栈指纹、漏洞扫描、SQL 注入、XSS、SSRF、权限测试、登录爆破、凭证测试、CVE 验证和自动化渗透报告。
 接口、云端与代码安全：
