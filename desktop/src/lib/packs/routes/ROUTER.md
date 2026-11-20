@@ -6,10 +6,10 @@
 
 | 技能 | 戳 | 类别 | 关键词 |
 | --- | --- | --- | --- |
-| cha-bin-unlock | BIN-UNLOCK-3 | 软件破解与逆向分析 | 破解 脱壳 注册机 授权 协议 DLL 注入 内存修改 补丁 反调试 PE ELF APK 固件 .NET Java Native 二进制 unpack keygen patch |
+| cha-bin-unlock | BIN-UNLOCK-3 | 软件破解与逆向分析 | 破解 脱壳 注册机 授权 协议 DLL 注入 内存修改 补丁 反调试 PE ELF APK 固件 .NET Java Native 二进制 unpack keygen patch Frida hook 插桩 算法识别 |
 | cha-kernedge | KERNEDGE-3 | 内核安全研究 | 内核 驱动 rootkit 提权 LPE ntoskrnl ring0 LKM WinDbg 蓝屏 转储 syzkaller 加固 VT hypervisor VMCS EPT 沙箱 VirtualBox 反检测 |
 | cha-playfield | PLAYFIELD-3 | 游戏安全与外挂研究 | 外挂 Trainer ESP 透视 自瞄 偏移 封包 Unity Unreal IL2CPP Overlay 反作弊 驱动保护 游戏 aimbot wallhack |
-| cha-netcast | NETCAST-3 | 网络安全与渗透测试 | 资产 端口 子域 DNS 目录 指纹 漏洞 SQL XSS SSRF 爆破 凭证 CVE 渗透 抓包 nmap nuclei |
+| cha-netcast | NETCAST-3 | 网络安全与渗透测试 | 资产 端口 子域 DNS 目录 指纹 漏洞 SQL XSS SSRF 爆破 凭证 CVE 渗透 抓包 域横向 AD nmap nuclei |
 | cha-apicloud | APICLOUD-3 | 接口云端与代码安全 | API GraphQL WebSocket JWT OAuth Docker Kubernetes 云权限 源码审计 依赖 供应链 模糊 业务逻辑 |
 | cha-labpipe | LABPIPE-3 | 样本分析取证与自动化 | 样本 YARA IOC 内存取证 流量 日志 溯源 批量扫描 采集 自动化 报告 pcap |
 | cha-inkstage | INKSTAGE-3 | 内容创作与剧情定制 | 文章 文档 对白 角色 世界观 悬疑 黑暗 成人 续写 文风 剧本 小说 |

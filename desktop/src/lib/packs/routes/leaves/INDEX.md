@@ -22,6 +22,8 @@
 | APK 分析 | `cra-apk` | `cha-bin-unlock` | APK Android smali jadx 加固 |
 | 固件分析 | `cra-fw` | `cha-bin-unlock` | 固件 firmware binrootfs squashfs |
 | 其它二进制 | `cra-bin-else` | `cha-bin-unlock` | 二进制 binary 样本 未知格式 |
+| 动态插桩 | `cra-hook` | `cha-bin-unlock` | Frida hook 插桩 Xposed 主动调用 trace 动态分析 |
+| 算法识别还原 | `cra-crypto` | `cha-bin-unlock` | 加密算法识别 FindCrypt 魔改算法 密钥派生 对拍 |
 | Windows 内核 | `ker-win` | `cha-kernedge` | Windows 内核 ntoskrnl ring0 环0 内核对象 KPCR EPROCESS |
 | Linux 内核 | `ker-lin` | `cha-kernedge` | Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring GKI SELinux |
 | 驱动攻击面 | `ker-drv` | `cha-kernedge` | 驱动 .sys DriverEntry IRP IOCTL DeviceIoControl 派遣 攻击面 |
@@ -65,6 +67,7 @@
 | CVE 验证 | `net-cve` | `cha-netcast` | CVE POC 复现 版本 |
 | 渗透报告 | `net-report` | `cha-netcast` | 渗透报告 证据 利用链 |
 | 抓包采集 | `net-capture` | `cha-netcast` | 抓包 tcpdump tshark Wireshark mitmproxy 流量采集 中间人 |
+| 域环境评估 | `net-ad` | `cha-netcast` | 域渗透 AD BloodHound Kerberoasting 横向 LDAP 域侦察 |
 | API 安全 | `cld-api` | `cha-apicloud` | REST API 接口 未授权 BOLA |
 | GraphQL | `cld-gql` | `cha-apicloud` | GraphQL introspection 过度取数 |
 | WebSocket | `cld-ws` | `cha-apicloud` | WebSocket 握手 订阅 推送 |
@@ -72,13 +75,13 @@
 | OAuth | `cld-oauth` | `cha-apicloud` | OAuth redirect_uri 授权码  Implicit |
 | Docker | `cld-docker` | `cha-apicloud` | Docker sock 逃逸 镜像 |
 | Kubernetes | `cld-k8s` | `cha-apicloud` | K8s RBAC secret 仪表盘 |
-| 云权限 | `cld-iam` | `cha-apicloud` | 云权限 IAM 元数据 STS |
+| 云权限 | `cld-iam` | `cha-apicloud` | 云权限 IAM 元数据 STS bucket OSS S3 误配 |
 | 源码审计 | `cld-audit` | `cha-apicloud` | 源码审计 sink 污染 代码审查 |
 | 依赖漏洞 | `cld-deps` | `cha-apicloud` | 依赖漏洞 CVE 锁文件 sbom |
 | 供应链安全 | `cld-supply` | `cha-apicloud` | 供应链 CI 投毒 构建脚本 |
 | 模糊测试 | `cld-fuzz` | `cha-apicloud` | 模糊测试 fuzz corpus AFL |
 | 业务逻辑 | `cld-biz` | `cha-apicloud` | 业务逻辑 支付 状态机 竞态 |
-| 恶意样本分析 | `lab-sample` | `cha-labpipe` | 样本分析 malware 木马 行为 |
+| 恶意样本分析 | `lab-sample` | `cha-labpipe` | 样本分析 malware 木马 行为 APK dex 样本 |
 | YARA | `lab-yara` | `cha-labpipe` | YARA 规则 匹配 |
 | IOC | `lab-ioc` | `cha-labpipe` | IOC 域名 IP 哈希 mutex |
 | 内存取证 | `lab-memfor` | `cha-labpipe` | 内存取证 volatility 转储 |

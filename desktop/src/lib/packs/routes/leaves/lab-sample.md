@@ -1,14 +1,14 @@
 ---
 name: lab-sample
 description: >
-  CHA leaf workflow for 恶意样本分析. Use when: 样本分析 malware 木马 行为.
+  CHA leaf workflow for 恶意样本分析. Use when: 样本分析 malware 木马 行为 APK dex 样本.
 parent: cha-labpipe
 ---
 
 # 恶意样本分析 · LEAF-lab-sample
 
 父技能：`cha-labpipe`
-关键词：样本分析 malware 木马 行为
+关键词：样本分析 malware 木马 行为 APK dex 样本
 
 第一步 哈希、类型、加壳。
 

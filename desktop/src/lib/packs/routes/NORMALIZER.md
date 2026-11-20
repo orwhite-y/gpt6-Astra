@@ -22,6 +22,8 @@
 | 改内存、改金币、改血、改数值 | 内存修改 | cra-mem |
 | 改几个字节、nop掉、补一刀、打补丁 | 补丁制作 | cra-patch |
 | 不让它察觉调试、过反调、藏调试器 | 反调试绕过 | cra-antidebug |
+| frida hook一下、插桩看看、动态追一下 | 动态插桩 | cra-hook |
+| 这什么加密、识别一下算法、密钥在哪 | 算法识别还原 | cra-crypto |
 | 用 dnspy、这是C#的、托管程序拆开 | .NET 逆向 | cra-dotnet |
 | jar拆开、class反编译、java逆向 | Java 逆向 | cra-java |
 | so拆开、native层、JNI那一层 | Native 逆向 | cra-native |
@@ -73,6 +75,7 @@
 | 这个cve能打吗、复现编号 | CVE 验证 | net-cve |
 | 出个报告、把链写清楚 | 渗透报告 | net-report |
 | 抓包、抓一下包、mitmproxy、中间人抓包 | 抓包采集 | net-capture |
+| 域里摸一圈、横向怎么走、域侦察 | 域环境评估 | net-ad |
 | 接口清单、未授权接口 | API 安全 | cld-api |
 | graphql、过度取数 | GraphQL | cld-gql |
 | websocket、推送越权 | WebSocket | cld-ws |

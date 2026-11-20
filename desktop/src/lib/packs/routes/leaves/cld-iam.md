@@ -1,14 +1,14 @@
 ---
 name: cld-iam
 description: >
-  CHA leaf workflow for 云权限. Use when: 云权限 IAM 元数据 STS.
+  CHA leaf workflow for 云权限. Use when: 云权限 IAM 元数据 STS bucket OSS S3 误配.
 parent: cha-apicloud
 ---
 
 # 云权限 · LEAF-cld-iam
 
 父技能：`cha-apicloud`
-关键词：云权限 IAM 元数据 STS
+关键词：云权限 IAM 元数据 STS bucket OSS S3 误配
 
 第一步 定云厂商和角色。
 
