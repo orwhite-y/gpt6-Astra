@@ -23,16 +23,18 @@
 | 固件分析 | `cra-fw` | `cha-bin-unlock` | 固件 firmware binrootfs squashfs |
 | 其它二进制 | `cra-bin-else` | `cha-bin-unlock` | 二进制 binary 样本 未知格式 |
 | Windows 内核 | `ker-win` | `cha-kernedge` | Windows 内核 ntoskrnl ring0 环0 内核对象 KPCR EPROCESS |
-| Linux 内核 | `ker-lin` | `cha-kernedge` | Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring |
+| Linux 内核 | `ker-lin` | `cha-kernedge` | Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring GKI SELinux |
 | 驱动攻击面 | `ker-drv` | `cha-kernedge` | 驱动 .sys DriverEntry IRP IOCTL DeviceIoControl 派遣 攻击面 |
 | 提权链 | `ker-lpe` | `cha-kernedge` | 提权 LPE Token SYSTEM 权限提升 原语 |
-| 内核调试 | `ker-dbg` | `cha-kernedge` | 内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb |
+| 内核调试 | `ker-dbg` | `cha-kernedge` | 内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb Driver Verifier 驱动验证器 |
 | 内核转储 | `ker-dump` | `cha-kernedge` | 内核转储 dump 蓝屏 BSOD bugcheck kdump vmcore 崩溃 |
 | 内核模糊 | `ker-fuzz` | `cha-kernedge` | 内核模糊 syzkaller kAFL ioctl fuzzer 语料 崩溃去重 |
 | rootkit 分析 | `ker-rootkit` | `cha-kernedge` | rootkit DKOM 回调挂钩 Minifilter 隐藏 持久化 对抗 |
 | 内核缓解 | `ker-guard` | `cha-kernedge` | 缓解 加固 PatchGuard HVCI VBS SMEP SMAP CFI 驱动签名 WDAC |
 | VT-x 虚拟化 | `ker-vt` | `cha-kernedge` | VT-x hypervisor VMX VMCS EPT VM-exit 虚拟化 VMM |
 | 反虚拟机检测 | `ker-stealth` | `cha-kernedge` | 反检测 沙箱隐身 al-khaser Pafish VM检测 虚拟机识别 对抗 |
+| 内核补丁对比 | `ker-patchdiff` | `cha-kernedge` | 补丁对比 BinDiff Patch Tuesday diff 根因 最小复现 |
+| 符号与偏移库 | `ker-symbols` | `cha-kernedge` | 符号 PDB 符号服务器 BTF pahole drgn 偏移表 结构偏移 版本差异 |
 | 游戏外挂 | `ply-cheat` | `cha-playfield` | 外挂 cheat 辅助 挂 |
 | Trainer | `ply-trainer` | `cha-playfield` | Trainer 修改器 无限弹药 金钱 |
 | ESP | `ply-esp` | `cha-playfield` | ESP 方框 骨骼 物品描边 |

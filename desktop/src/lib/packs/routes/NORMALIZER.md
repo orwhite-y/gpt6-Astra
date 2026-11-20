@@ -41,6 +41,8 @@
 | 缓解开了没、内核加固、patchguard | 内核缓解 | ker-guard |
 | 写个hypervisor、VT开发、VMCS、EPT拆一下 | VT-x 虚拟化 | ker-vt |
 | 过alkhaser、防虚拟机识别、沙箱隐身、过VM检测 | 反虚拟机检测 | ker-stealth |
+| 补丁对比、diff一下补丁、这个补丁修了啥 | 内核补丁对比 | ker-patchdiff |
+| 拉一下符号、结构偏移表、版本偏移对比 | 符号与偏移库 | ker-symbols |
 | 做个挂、辅助、开挂 | 游戏外挂 | ply-cheat |
 | 修改器、一键加钱、锁血 | Trainer | ply-trainer |
 | 画个框、人物描边、esp | ESP | ply-esp |
