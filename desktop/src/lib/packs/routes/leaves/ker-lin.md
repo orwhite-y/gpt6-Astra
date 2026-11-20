@@ -1,14 +1,14 @@
 ---
 name: ker-lin
 description: >
-  CHA leaf workflow for Linux 内核. Use when: Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring.
+  CHA leaf workflow for Linux 内核. Use when: Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring GKI SELinux.
 parent: cha-kernedge
 ---
 
 # Linux 内核 · LEAF-ker-lin
 
 父技能：`cha-kernedge`
-关键词：Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring
+关键词：Linux 内核 LKM vmlinux syscall cred SLUB eBPF io_uring GKI SELinux
 
 第一步 认版本：内核版本、CONFIG_ 关键项、符号（vmlinux/System.map/BTF）与 KASLR。
 

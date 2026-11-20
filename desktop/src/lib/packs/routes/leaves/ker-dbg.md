@@ -1,14 +1,14 @@
 ---
 name: ker-dbg
 description: >
-  CHA leaf workflow for 内核调试. Use when: 内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb.
+  CHA leaf workflow for 内核调试. Use when: 内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb Driver Verifier 驱动验证器.
 parent: cha-kernedge
 ---
 
 # 内核调试 · LEAF-ker-dbg
 
 父技能：`cha-kernedge`
-关键词：内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb
+关键词：内核调试 WinDbg kd 双机调试 qemu gdbstub kgdb Driver Verifier 驱动验证器
 
 第一步 定环境：Windows 双机（bcdedit /dbgsettings，net/串口）或 Linux（qemu -s、kgdb）。
 
