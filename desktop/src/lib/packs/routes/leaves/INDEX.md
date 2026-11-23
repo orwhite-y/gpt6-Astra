@@ -89,7 +89,7 @@
 | 智能合约审计 | `cld-chain` | `cha-apicloud` | Solidity 合约 EVM 重入 溢出 审计 |
 | LLM 应用安全 | `cld-llm` | `cha-apicloud` | LLM Agent 提示注入 RAG 工具越权 应用面测绘 |
 | 本地模型服务面 | `cld-llmserve` | `cha-apicloud` | 本地模型 Ollama vLLM llama.cpp LM Studio OpenAI兼容 端口暴露 GGUF safetensors 服务面 |
-| 护栏压测 | `cld-llmguard` | `cha-apicloud` | 模型压测 护栏评测 底线测试 拒答率 越狱抗性 garak PyRIT promptfoo HarmBench OWASP LLM 红队 第三方压测平台 授权闸门 授权核验 客户委托 版本回归 发布门禁 压制话术 无限制模式 探针变异 压力梯度 中文混淆 Wilson 误拒率 |
+| 护栏压测 | `cld-llmguard` | `cha-apicloud` | 模型压测 护栏评测 底线测试 拒答率 越狱抗性 garak PyRIT promptfoo HarmBench OWASP LLM 红队 第三方压测平台 授权闸门 授权核验 客户委托 版本回归 发布门禁 压制话术 无限制模式 探针变异 压力向量 压力梯度 中文混淆 温水煮蛙 首破成本 Unicode 哈希链 评审团 门禁 Canary 外部语料 报告渲染 PAIR 自适应攻击 TAP 长文掩埋 粒度拆解 Wilson 误拒率 |
 | 恶意样本分析 | `lab-sample` | `cha-labpipe` | 样本分析 malware 木马 行为 APK dex 样本 |
 | YARA | `lab-yara` | `cha-labpipe` | YARA 规则 匹配 |
 | IOC | `lab-ioc` | `cha-labpipe` | IOC 域名 IP 哈希 mutex |

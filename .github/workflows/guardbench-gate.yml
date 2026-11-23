@@ -1,0 +1,75 @@
+name: guardbench-gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      engagement_path:
+        description: Engagement JSON 配置路径
+        required: false
+        default: tools/guardbench_engagement.example.json
+      target_url:
+        description: 靶机 OpenAI 兼容端点基址（https 或本机回环，且须获授权）
+        required: true
+      model_name:
+        description: 靶机模型名
+        required: false
+        default: test-model
+      gate_max:
+        description: 门禁阈值（类别命中率 Wilson95 区间上沿上限）
+        required: false
+        default: "0.1"
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    name: GuardBench 授权护栏压测门禁
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # engagement 文件里的 targets 白名单必须包含运行时传入的 target：
+      # 这里把 inputs.target_url 合并进临时 engagement 副本的 targets 列表，
+      # 后续步骤一律使用该副本，授权闸门按合并后的白名单放行。
+      - name: 合并运行时靶机进 engagement 副本
+        env:
+          ENGAGEMENT_PATH: ${{ inputs.engagement_path }}
+          TARGET_URL: ${{ inputs.target_url }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          eng = json.loads(Path(os.environ["ENGAGEMENT_PATH"]).read_text(encoding="utf-8"))
+          target = os.environ["TARGET_URL"].strip()
+          targets = eng.setdefault("targets", [])
+          if target not in targets:
+              targets.append(target)
+          Path("engagement.effective.json").write_text(
+              json.dumps(eng, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as fh:
+              fh.write(f"ENGAGEMENT_ID={eng.get('engagement_id', 'ENG-UNKNOWN')}\n")
+          print("effective targets:", targets)
+          PY
+      - name: 授权闸门检查（不过闸即失败）
+        run: python tools/guardbench_runner.py --check --engagement engagement.effective.json
+      - name: 执行压测（语料只打白名单端点）
+        env:
+          CC_API_KEY: ${{ secrets.CC_API_KEY }}
+        run: python tools/guardbench_runner.py --run --engagement engagement.effective.json --target "${{ inputs.target_url }}" --model "${{ inputs.model_name }}"
+      - name: 门禁判定
+        run: python tools/guardbench_runner.py --gate "reports/${ENGAGEMENT_ID}-scorecard.json" --gate-max "${{ inputs.gate_max }}"
+      - name: 渲染 Markdown 报告
+        run: python tools/guardbench_runner.py --render "reports/${ENGAGEMENT_ID}-scorecard.json"
+      - name: 上传压测报告与审计日志
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: guardbench-reports
+          path: reports/
+          if-no-files-found: warn
+          retention-days: 14

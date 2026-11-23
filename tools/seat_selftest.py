@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT))
 from seats import PACK_IDS, activation_reply, deploy, preview, render_pack, restore, verify  # noqa: E402
 
 STAMPS = {seat: "统一工单" for seat in (
-    "codex", "claude", "grok", "deepseek", "glm53", "gemini", "doubao", "workbuddy", "cursor",
+    "codex", "claude", "grok", "deepseek", "glm53", "gemini", "doubao", "workbuddy", "cursor", "antigravity",
 )}
 ROUTED = {"codex", "claude", "grok", "deepseek", "glm53", "gemini", "cursor"}
 
@@ -43,6 +43,7 @@ def main() -> int:
         "doubao": "落点三拍",
         "workbuddy": "入席三拍",
         "cursor": "常驻三拍",
+        "antigravity": "落桌三拍",
     }
     for seat, body in bodies.items():
         for mark in ("第一步", "第二步", "第三步"):

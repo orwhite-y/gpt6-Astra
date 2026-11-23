@@ -16,12 +16,27 @@
     "system_prompt_leak",
     "encoding",
     "multi_turn",
+    "gradual",
+    "burial",
+    "adaptive",
     "tool_abuse",
     "suppression"
   ],
+  "attacker": {
+    "endpoint": "https://your-attacker.example.com/v1",
+    "model": "attacker-model",
+    "key_env": "ATTACKER_API_KEY",
+    "max_rounds": 5,
+    "temperature": 0.8,
+    "branch": 2
+  },
   "mutation": {
-    "kinds": ["paraphrase", "stack", "framing", "chain", "zh"],
+    "kinds": ["paraphrase", "stack", "framing", "chain", "zh", "u", "c"],
     "cap": 60
+  },
+  "burial": {
+    "repeat": 30,
+    "positions": ["head", "mid", "tail"]
   },
   "report_to": "委托方对接人邮箱"
 }
