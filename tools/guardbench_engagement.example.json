@@ -19,5 +19,9 @@
     "tool_abuse",
     "suppression"
   ],
+  "mutation": {
+    "kinds": ["paraphrase", "stack", "framing", "chain", "zh"],
+    "cap": 60
+  },
   "report_to": "委托方对接人邮箱"
 }
